@@ -18,6 +18,13 @@ asdf global golang latest
 export GOPATH=$HOME/asdf/shims
 export PATH="$GOPATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 ```
+* VSCode  
+From @ko31:
+    > Open the Extensions Marketplace (Cmd+Shift+X), search Go and install it.
+    >
+    > [O]pen the Command Palette (Cmd+Shift+P) and run the Go: Install/Update Tools command.
+    >
+    > Install all the Go extensions listed there.
 
 ## Usage
 ```bash
@@ -32,10 +39,13 @@ go mod init example/hello
 
 # run program in working directory
 go run .
+
+# install dependency
+go get rsc.io/quote
 ```
 
 ## TODO
-* Add VSCode usage (plugins, debugging)
+* ~~Add VSCode usage (plugins, debugging)~~
 
 ## Further reading
 [Learn Go | Sololearn](https://www.sololearn.com/learning/1164)
@@ -49,3 +59,5 @@ go run .
 [Tutorial: Create a Go module - The Go Programming Language](https://golang.org/doc/tutorial/create-module)
 
 [pkg.go.dev](https://pkg.go.dev/)
+
+[How to setup Golang with VSCode - DEV Community](https://dev.to/ko31/how-to-setup-golang-with-vscode-1i4i)
