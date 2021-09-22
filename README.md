@@ -16,7 +16,7 @@ asdf global golang latest
 # add asdf shims to ~/.bashrc
 # append $GOPATH to existing $PATH (default macOS path listed)
 export GOPATH=$HOME/asdf/shims
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$GOPATH"
+export PATH="$GOPATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 ```
 
 ## Usage
