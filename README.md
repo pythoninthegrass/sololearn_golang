@@ -1,6 +1,7 @@
 # SoloLearn - Go
 
 ## Setup
+
 ```bash
 # install homebrew (macOS)
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -18,15 +19,42 @@ asdf global golang latest
 export GOPATH=$HOME/asdf/shims
 export PATH="$GOPATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 ```
-* VSCode  
-From @ko31:
-    > Open the Extensions Marketplace (Cmd+Shift+X), search Go and install it.
-    >
-    > [O]pen the Command Palette (Cmd+Shift+P) and run the Go: Install/Update Tools command.
-    >
-    > Install all the Go extensions listed there.
+
+- VSCode
+  From @ko31: > Open the Extensions Marketplace (Cmd+Shift+X), search Go and install it. > > [O]pen the Command Palette (Cmd+Shift+P) and run the Go: Install/Update Tools command. > > Install all the Go extensions listed there.
+- Known good config
+
+```json
+{
+  // OTHER CONFIG ITEMS ^^
+  // GOLANG-SPECIFIC
+  "explorer.confirmDelete": false,
+  "go.inferGopath": false,
+  "go.buildOnSave": "workspace",
+  "go.lintOnSave": "package",
+  "go.vetOnSave": "package",
+  "go.buildTags": "",
+  "go.buildFlags": [],
+  "go.lintFlags": [],
+  "go.vetFlags": [],
+  "go.coverOnSave": false,
+  "go.useCodeSnippetsOnFunctionSuggest": false,
+  "go.formatTool": "default",
+  "go.gocodeAutoBuild": false,
+  "go.useLanguageServer": true,
+  "go.alternateTools": {
+    "go-langserver": "gopls"
+  },
+  "[go]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  }
+}
+```
 
 ## Usage
+
 ```bash
 # create directory and move to it
 mkdir -p
@@ -45,9 +73,11 @@ go get rsc.io/quote
 ```
 
 ## TODO
-* ~~Add VSCode usage (plugins, debugging)~~
+
+- TODO
 
 ## Further reading
+
 [Learn Go | Sololearn](https://www.sololearn.com/learning/1164)
 
 [The Missing Package Manager for macOS (or Linux) — Homebrew](https://brew.sh/)
