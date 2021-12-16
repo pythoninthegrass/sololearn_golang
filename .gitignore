@@ -1,5 +1,6 @@
 # etc
 **/.vscode
+scratch/
 
 # Binaries for programs and plugins
 *.exe
