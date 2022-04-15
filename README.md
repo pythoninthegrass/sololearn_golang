@@ -91,3 +91,5 @@ go get rsc.io/quote
 [pkg.go.dev](https://pkg.go.dev/)
 
 [How to setup Golang with VSCode - DEV Community](https://dev.to/ko31/how-to-setup-golang-with-vscode-1i4i)
+
+[Quick Start - GoReleaser](https://goreleaser.com/quick-start/)
