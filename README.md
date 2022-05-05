@@ -1,7 +1,13 @@
 # SoloLearn - Go
 
-## Setup
+**Table of Contents**
+* [SoloLearn - Go](#sololearn---go)
+  * [Setup](#setup)
+  * [Usage](#usage)
+  * [TODO](#todo)
+  * [Further reading](#further-reading)
 
+## Setup
 ```bash
 # install homebrew (macOS)
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -20,9 +26,9 @@ export GOPATH=$HOME/asdf/shims
 export PATH="$GOPATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 ```
 
-- VSCode
+* VSCode
   From @ko31: > Open the Extensions Marketplace (Cmd+Shift+X), search Go and install it. > > [O]pen the Command Palette (Cmd+Shift+P) and run the Go: Install/Update Tools command. > > Install all the Go extensions listed there.
-- Known good config
+* Known good config
 
 ```json
 {
@@ -74,7 +80,7 @@ go get rsc.io/quote
 
 ## TODO
 
-- TODO
+* TODO
 
 ## Further reading
 
