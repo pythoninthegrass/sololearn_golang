@@ -62,12 +62,12 @@ export PATH="$GOPATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 ## Usage
 
 ```bash
+# start module and track code's dependencies in tld
+go mod init git_username/repo_name
+
 # create directory and move to it
 mkdir -p
 cd hello/
-
-# start module and track code's dependencies
-go mod init example/hello
 
 # edit hello.go
 
