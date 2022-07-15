@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // timer base types
 type Timer struct {
@@ -17,6 +19,7 @@ func (t *Timer) tick(val int) {
 // timer is named "timer1", empty initial value, increment by 1
 func main() {
     var x int
+	// fmt.Println("Enter time (seconds): ")
     fmt.Scanln(&x)
 
     t := Timer{"timer1", 0}
