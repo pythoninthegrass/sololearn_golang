@@ -17,8 +17,8 @@ brew install asdf
 
 # install go
 asdf plugin-add golang https://github.com/kennyp/asdf-golang
-asdf install golang latest
-asdf global golang latest
+asdf install golang 1.18.4
+asdf local golang 1.18.4
 
 # add asdf shims to ~/.bashrc
 # append $GOPATH to existing $PATH (default macOS path listed)
