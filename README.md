@@ -66,8 +66,7 @@ export PATH="$GOPATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 go mod init git_username/repo_name
 
 # create directory and move to it
-mkdir -p
-cd hello/
+mkdir -p hello && cd $_
 
 # edit hello.go
 
