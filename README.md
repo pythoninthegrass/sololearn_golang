@@ -32,30 +32,30 @@ export PATH="$GOPATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 ```json
 {
-  // OTHER CONFIG ITEMS ^^
-  // GOLANG-SPECIFIC
-  "explorer.confirmDelete": false,
-  "go.inferGopath": false,
-  "go.buildOnSave": "workspace",
-  "go.lintOnSave": "package",
-  "go.vetOnSave": "package",
-  "go.buildTags": "",
-  "go.buildFlags": [],
-  "go.lintFlags": [],
-  "go.vetFlags": [],
-  "go.coverOnSave": false,
-  "go.useCodeSnippetsOnFunctionSuggest": false,
-  "go.formatTool": "default",
-  "go.gocodeAutoBuild": false,
-  "go.useLanguageServer": true,
-  "go.alternateTools": {
-    "go-langserver": "gopls"
-  },
-  "[go]": {
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-    }
-  }
+    // OTHER CONFIG ITEMS ^^
+    // GOLANG-SPECIFIC
+    "go.inferGopath": false,
+    "go.buildOnSave": "workspace",
+    "go.lintOnSave": "package",
+    "go.vetOnSave": "package",
+    "go.buildTags": "",
+    "go.buildFlags": [],
+    "go.lintFlags": [],
+    "go.vetFlags": [],
+    "go.coverOnSave": false,
+    "go.useCodeSnippetsOnFunctionSuggest": false,
+    "go.formatTool": "default",
+    "go.gocodeAutoBuild": false,
+    "go.useLanguageServer": true,
+    "go.alternateTools": {
+        "go-langserver": "gopls"
+    },
+    "[go]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+        "editor.formatOnSave": true,
+    },
 }
 ```
 
@@ -76,6 +76,9 @@ go run .
 
 # install dependency
 go get rsc.io/quote
+
+# cleanup imports
+go mod tidy
 ```
 
 ## TODO
