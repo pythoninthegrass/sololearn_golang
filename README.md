@@ -44,7 +44,7 @@ export PATH="$GOPATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
     "go.vetFlags": [],
     "go.coverOnSave": false,
     "go.useCodeSnippetsOnFunctionSuggest": false,
-    "go.formatTool": "default",
+    "go.formatTool": "gofmt",
     "go.gocodeAutoBuild": false,
     "go.useLanguageServer": true,
     "go.alternateTools": {
@@ -52,7 +52,7 @@ export PATH="$GOPATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
     },
     "[go]": {
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true
+            "source.organizeImports": false
         },
         "editor.formatOnSave": true,
     },
