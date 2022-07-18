@@ -16,7 +16,7 @@
             // "args": [
             //     "2",
             // ],
-            "showLog": true
+            "showLog": false
         }
     ]
 }
