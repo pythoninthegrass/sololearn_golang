@@ -19,16 +19,18 @@ brew install asdf
 asdf plugin-add golang https://github.com/kennyp/asdf-golang
 asdf install golang 1.18.4
 asdf local golang 1.18.4
+asdf reshim
 
-# add asdf shims to ~/.bashrc
-# append $GOPATH to existing $PATH (default macOS path listed)
+# append $GOPATH to existing $PATH (~/.bashrc)
 export GOPATH=$(go env GOPATH)
 export GOROOT=$(go env GOROOT)
 export GOBIN=$(go env GOBIN)
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOBIN
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+
+# install delve debugger
+go install github.com/go-delve/delve/cmd/dlv@latest
 ```
 
 * VSCode
