@@ -1,7 +1,6 @@
 package main
 import "fmt"
 
-//define the count() function
 func count(num int, data []int, ch chan int) {
 	var result int
 	for _, v := range data {
@@ -25,6 +24,5 @@ func main() {
     go count(num, data[:len(data)/2], ch1)
     go count(num, data[len(data)/2:], ch2)
 
-    //output the final result here
 	fmt.Println(<-ch1 + <- ch2)
 }
