@@ -87,8 +87,10 @@ go mod tidy
 ```
 
 ## TODO
-
-* TODO
+* Extracurricular
+  * Calculate datetime from 9/21/2021 (git init) to 7/19/2022 w/Go stdlib
+    * I.e., course completion duration
+    * [301 days](https://www.timeanddate.com/date/durationresult.html?m1=09&d1=21&y1=2021&m2=7&d2=19&y2=2022)
 
 ## Further reading
 
