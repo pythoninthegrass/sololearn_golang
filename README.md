@@ -67,7 +67,6 @@ go install github.com/go-delve/delve/cmd/dlv@latest
 ```
 
 ## Usage
-
 ```bash
 # start module and track code's dependencies in tld
 go mod init git_username/repo_name
@@ -77,10 +76,10 @@ mkdir -p hello && cd $_
 
 # edit hello.go
 
-# run program in working directory
+# run program in working directory (downloads deps automatically from go.mod)
 go run .
 
-# install dependency
+# install new dependency
 go get rsc.io/quote
 
 # cleanup imports
