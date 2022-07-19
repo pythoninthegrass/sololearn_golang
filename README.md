@@ -22,8 +22,13 @@ asdf local golang 1.18.4
 
 # add asdf shims to ~/.bashrc
 # append $GOPATH to existing $PATH (default macOS path listed)
-export GOPATH=$HOME/asdf/shims
-export PATH="$GOPATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export GOPATH=$(go env GOPATH)
+export GOROOT=$(go env GOROOT)
+export GOBIN=$(go env GOBIN)
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOBIN
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 ```
 
 * VSCode
@@ -91,6 +96,8 @@ go mod tidy
 [The Missing Package Manager for macOS (or Linux) — Homebrew](https://brew.sh/)
 
 [Introduction | asdf](https://asdf-vm.com/guide/introduction.html)
+
+[asdf to manage multiple Golang on Mac – ookangzheng](https://www.ookangzheng.com/asdf-to-manage-multiple-golang-on-mac/)
 
 [Tutorial: Get started with Go - The Go Programming Language](https://golang.org/doc/tutorial/getting-started)
 
