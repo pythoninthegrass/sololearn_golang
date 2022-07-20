@@ -22,12 +22,15 @@ asdf local golang 1.18.4
 asdf reshim
 
 # append $GOPATH to existing $PATH (~/.bashrc)
+export ASDF_DIR="$HOME/.asdf"
+export PATH="$ASDF_DIR/shims:$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 export GOPATH=$(go env GOPATH)
 export GOROOT=$(go env GOROOT)
 export GOBIN=$(go env GOBIN)
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOBIN
+export PATH=$(echo -n $PATH | awk -v RS=: -v ORS=: '!x[$0]++' | sed "s/\(.*\).\{1\}/\1/")
 
 # install delve debugger
 go install github.com/go-delve/delve/cmd/dlv@latest
