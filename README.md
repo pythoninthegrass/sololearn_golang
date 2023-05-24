@@ -17,8 +17,8 @@ brew install asdf
 
 # install go
 asdf plugin-add golang https://github.com/kennyp/asdf-golang
-asdf install golang 1.18.4
-asdf local golang 1.18.4
+asdf install golang 1.20.4
+asdf local golang 1.20.4
 asdf reshim
 
 # append $GOPATH to existing $PATH (~/.bashrc)
