@@ -1,6 +1,6 @@
 module pythoninthegrass/sololearn_golang
 
-go 1.18
+go 1.20
 
 require rsc.io/quote v1.5.2
 
