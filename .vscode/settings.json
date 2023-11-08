@@ -1,7 +1,8 @@
 {
   "go.gopath": "~/.asdf/installs/golang/1.21.3/packages",
   "go.goroot": "~/.asdf/installs/golang/1.21.3/go",
+  "go.testTimeout": "180s",
   "go.toolsEnvVars": {
-      "GOPROXY": "https://proxy.golang.org,direct"
+    "GOPROXY": "https://proxy.golang.org,direct"
   }
 }
