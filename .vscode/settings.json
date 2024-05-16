@@ -1,5 +1,5 @@
 {
-  "go.goroot": "~/go/",
+  "go.goroot": "${env:GOROOT}",
   "go.testTimeout": "180s",
   "go.toolsEnvVars": {
     "GOPROXY": "https://proxy.golang.org,direct"
