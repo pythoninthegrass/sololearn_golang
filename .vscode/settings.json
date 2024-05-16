@@ -1,8 +1,10 @@
 {
-  "go.gopath": "~/go/",
   "go.goroot": "~/go/",
   "go.testTimeout": "180s",
   "go.toolsEnvVars": {
     "GOPROXY": "https://proxy.golang.org,direct"
+  },
+  "files.exclude": {
+    "archive": true
   }
 }
