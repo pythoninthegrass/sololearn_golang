@@ -1,0 +1,21 @@
+VERSION 0.8
+FROM golang:1.22-alpine3.20
+WORKDIR /app
+
+hello:
+    FROM earthly/dind:alpine
+    WITH DOCKER --pull hello-world
+        RUN docker run hello-world
+    END
+
+build:
+    COPY hello.go .
+    RUN go build -o output/example hello.go
+    SAVE ARTIFACT output/example
+
+# TODO: test --push w/ghcr.io
+docker:
+    COPY +build/example .
+    ENTRYPOINT ["/app/example"]
+    ARG tag="hello-earthly"
+    SAVE IMAGE --push ghcr.io/pythoninthegrass/sololearn_golang:$tag
